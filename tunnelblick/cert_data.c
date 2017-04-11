@@ -6,16 +6,15 @@
 //  Copyright © 2017 Pavel Kondratiev. All rights reserved.
 //
 
+
+#include <CommonCrypto/CommonDigest.h>
 #include <stdio.h>
+#include <err.h>
 
 #include "cert_data.h"
-#include <CommonCrypto/CommonDigest.h>
-#include <openssl/ssl.h>
-
-
 #include "common_osx.h"
 #include "crypto_osx.h"
-#include <err.h>
+
 
 CFStringRef kCertDataSubjectName = CFSTR("subject"),
 kCertDataIssuerName = CFSTR("issuer"),
