@@ -162,6 +162,7 @@ struct Statistics {
 
 	BOOL volatile   skipConfigurationUpdateCheckOnce; // True only after have skipped a configuration update, so the next
 													  // connection attempt will not try to check for the update
+    SecIdentityRef  identityRef;         // Identity reference for keychain support
 }
 
 // PUBLIC METHODS:
